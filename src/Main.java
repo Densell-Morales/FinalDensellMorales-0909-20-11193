@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
 
@@ -56,7 +55,17 @@ public class Main {
             default:
                 System.out.println("Opción no válida. Inténtalo nuevamente.");
         }
+
+
+        ExamenFinalVarianteC numeroMayor = new ExamenFinalVarianteC();
+        System.out.print("Ingresa el segundo número: ");
+        double num2 = scanner.nextDouble();
+        System.out.print("Ingresa el tercer número: ");
+        double num3 = scanner.nextDouble();
+
+        double maximo = Math.max(numero, Math.max(num2, num3));
+        System.out.println("El mayor número es: " + maximo);
+
     }
 
-        }
-
+}
